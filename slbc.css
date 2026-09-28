@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: helvetica; background-color: #fef1ed;
+  color: #0e0604; 
+}
+.site-header {
+  align-items: flex-end;
+  display: flex;
+  padding: 2em 2em;
+}
+nav{
+  margin-left: auto; text-align:right; font-size:1em;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 1.5em;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:link{
+	color:#8f7770;
+}
+nav a:visited{
+	color:#8f7770;
+}
+nav a:hover{ 
+	color:#96d373;
+}
+.logo {
+  border: 3px solid #96d373;
+  border-radius: 50%;
+  display: block;
+  height: 75px;
+  overflow: hidden;
+  width: 75px;
+}
+.logo img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.menu-image:link,
+.menu-image:visited,
+#contact a:link,
+#contact a:visited,
+.social-links a:link,
+.social-links a:visited {
+  color: #8f7770;
+}
+.menu-image:hover,
+#contact a:hover,
+.social-links a:hover {
+  color: #96d373;
+}
+.button {
+  border: 2px solid #c1c6bc;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #c1c6bc;
+}
+.button:link,
+.button:visited {
+  color: #c1c6bc;
+}
+.button:hover {
+  color: #96d373;
+}
+#homehero{
+  width: 100%;
+  aspect-ratio: 700 / 350;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(home11.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  color: #c1c6bc;
+}
+h1{
+    font-family:serif; padding-top:2em
+}
+.hero-content p {
+  padding-right: 2em;
+}
+#homeimage3{
+	height:275px; background-image: url(home21.jpg); background-size: 100% 100%; background-repeat: no-repeat; width: 275px; padding-left: 3em;
+}
+#homeimage2{
+	height:275px; background-image: url(home31.jpg); background-size: 100% 100%; background-repeat: no-repeat; width: 275px; padding-left: 3em;
+}
+section{
+    padding-left: 2em;
+    text-align: center;
+}
+#homehero,
+.menu-preview {
+  text-align: left;
+}
+.split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 275px;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  padding-bottom: 1em;
+}
+.split-section #homeimage2 {
+  justify-self: end;
+}
+.split-section-reverse {
+  grid-template-columns: 275px minmax(0, 1fr);
+}
+#wrapper{
+	background-color: #fef1ed;
+}
+footer{
+	padding: 4em; font-size: 75%; text-align: center; font-family:Helvetica, sans-serif; background-color: #fef1ed; 
+}
+.founder{
+  font-size:small;
+  font-style:italic
+}
+.com {
+  font-style: italic;
+}
