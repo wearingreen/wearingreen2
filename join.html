@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOIN HERE</title>
+  <link rel="stylesheet" href="slbc.css">
+</head>
+<body class="join-page">
+    <div id="wrapper">
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="Salt Lake Brewers Club.jpg" alt="Salt Lake Brewers Club logo">
+        </a>
+    <nav aria-label="Main navigation">
+        <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="menu.html">MENU</a></li>
+             <li><a href="spotlight.html">SPOTLIGHT</a></li>
+             <li><a href="join.html">JOIN</a></li>
+             <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+    </nav>
+    </header>
+    <main>
+        <section>
+          <h2> Join Salt Lake Brewers Club</h2>
+            <h3>Fill out the form below</h3>
+            <p>
+                Required fields are marked with an asterisk *.
+            </p>
+            <form method="post" action="thankyou.html">
+                <label for="myFName">*First Name:</label>
+                <input type="text" id="myFName" name="myFName" required>
+                <label for="myLName">*Last Name:</label>
+                <input type="text" id="myLName" name="myLName" required>
+                <label for="myEmail">*Email:</label>
+                <input type="email" id="myEmail" name="myEmail" required>
+                <label for="myNumber">Phone:</label>
+                <input type="tel" id="myNumber" name="myNumber" maxlength="12">
+                <span id="experience-label">Brewing Experience:</span>
+                <div class="checkbox-options" role="group" aria-labelledby="experience-label">
+                    <label><input type="checkbox" name="Beginner" id="Beginner" value="yes"> Beginner</label>
+                    <label><input type="checkbox" name="Intermediate" id="Intermediate" value="yes"> Intermediate</label>
+                    <label><input type="checkbox" name="Advanced" id="Advanced" value="yes"> Advanced</label>
+                </div>
+                <label for="myComments">*Why are you joining SLBC?</label>
+                <textarea name="myComments" id="myComments" cols="30" rows="2"></textarea>
+                <input type="submit" value="Join">
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <h2>Contact Us</h2>
+            <div id="contact">
+              <span class="com"><a href=saltlakebrewersclub@gmail.com>saltlakebrewersclub@gmail.com</a></span>
+            </div>
+            <p>Stay updated</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/saltlakebrewersclub/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.youtube.com/@saltlakebrewersclub" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+        Copyright &copy;2025 SLBC
+    </footer>
+    </div>
+</body>
+</html>
