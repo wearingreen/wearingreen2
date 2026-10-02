@@ -192,13 +192,15 @@ form{
 form textarea {
   width: 100%;
 }
-form input[type="button"] {
+form input[type="button"],
+form input[type="submit"] {
   grid-column: 1 / -1;
   justify-self: start;
   font: inherit;
   padding: 0.4em 0.8em;
 }
-form input[type="button"]:hover {
+form input[type="button"]:hover,
+form input[type="submit"]:hover {
   color: #96d373;
   cursor: pointer;
 }
