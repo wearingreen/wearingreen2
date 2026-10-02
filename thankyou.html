@@ -90,11 +90,19 @@
             <div>
                 <h3> Schedule Here:</h3>
             </div>
-            <form method="post" action="seeyousoon.html">
+                        <form id="reservation-form">
                 <label for="myCalender">Date of Reservation:</label>
-                <input type="date" id="myCalender" name="myCalender" required min="10/1/26">
-                <input type="submit" value="Reserve">
+                                <input type="date" id="myCalender" name="myCalender" required min="2026-10-01">
+                                <input type="button" id="reservation-submit" value="Reserve">
             </form>
+                        <script>
+                            const reservationForm = document.getElementById("reservation-form");
+                            document.getElementById("reservation-submit").addEventListener("click", () => {
+                                if (reservationForm.reportValidity()) {
+                                    window.location.assign("seeyousoon.html");
+                                }
+                            });
+                        </script>
         </section>
     </main>
     </div>
