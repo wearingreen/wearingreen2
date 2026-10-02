@@ -29,7 +29,7 @@
             <p>
                 Required fields are marked with an asterisk *.
             </p>
-            <form id="join-form" method="post" action="thankyou.html">
+            <form id="join-form">
                 <label for="myFName">*First Name:</label>
                 <input type="text" id="myFName" name="myFName" required>
                 <label for="myLName">*Last Name:</label>
@@ -46,12 +46,14 @@
                 </div>
                 <label for="myComments">*Why are you joining SLBC?</label>
                 <textarea name="myComments" id="myComments" cols="30" rows="2"></textarea>
-                <input type="submit" value="Join">
+                <input type="button" id="join-submit" value="Join">
             </form>
                         <script>
-                            document.getElementById("join-form").addEventListener("submit", (event) => {
-                                event.preventDefault();
-                                window.location.assign("thankyou.html");
+                            const joinForm = document.getElementById("join-form");
+                            document.getElementById("join-submit").addEventListener("click", () => {
+                                if (joinForm.reportValidity()) {
+                                    window.location.assign("thankyou.html");
+                                }
                             });
                         </script>
         </section>
