@@ -109,6 +109,20 @@ section{
     padding-left: 2em;
     text-align: center;
 }
+.video-section {
+  padding-left: 2em;
+  text-align: left;
+  font-family: serif;
+}
+.video-section p {
+  margin: 0 0 1em;
+}
+.video-section video {
+  display: block;
+  width: min(100%, 700px);
+  height: auto;
+  margin: 1em 0 0;
+}
 #homehero,
 .menu-preview {
   text-align: left;
@@ -138,10 +152,10 @@ section{
 	background-color: #fef1ed;
 }
 footer{
-	padding: 6em; font-size: 75%;  
+  padding: 2em 10em; font-size: 75%;  
   text-align: center; 
   font-family:Helvetica, sans-serif; 
-  background-color: #fef1ed; 
+  background-color: #c1c6b6; 
 }
 .founder{
   font-size:small;
@@ -171,6 +185,9 @@ footer{
 }
 h3{
   font-family:serif; text-align: left;
+}
+main{
+  padding-bottom: 4em;
 }
 .join-page main section,
 .join-page main form {
@@ -257,6 +274,20 @@ tr:nth-of-type(odd){
   width: 100%;
   max-width: 60rem;
   white-space: normal;
+}
+video{
+	float: center;
+}
+#spotlight-section{
+  padding-inline: 2em;
+  padding-left:2em;
+  padding-bottom:4em;
+  font-family:serif;
+  text-align:left;
+}
+#spotlight-section section,
+#spotlight-section section p {
+  text-align: left;
 }
 @media (max-width: 900px) {
   .split-section,
